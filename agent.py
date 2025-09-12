@@ -199,7 +199,7 @@ def main():
                     4. If a city or country is not provided, don't filter by it and print overall results for the query.
                     5. List out all hotel details when outputting results.
                     6. Do not give out any hotel information that is not in the dataset.
-                    Always use the tool for hotel queries.""")
+                    Always use the tool for hotel queries. When outputting results, give all available details for each hotel.""")
 
                     # Compose full message list for the graph
                     all_msgs = [system_message] + st.session_state.chat_history.messages

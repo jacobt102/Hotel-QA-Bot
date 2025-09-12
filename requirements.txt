@@ -1,0 +1,8 @@
+pandas~=2.3.2
+streamlit~=1.49.1
+dotenv~=0.9.9
+python-dotenv~=1.1.1
+langchain-openai~=0.3.33
+langchain-core~=0.3.76
+langchain~=0.3.27
+langgraph~=0.6.7
