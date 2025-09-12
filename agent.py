@@ -91,6 +91,15 @@ def query_hotels(city: Optional[str]=None, country: Optional[str]=None, star_rat
 
 @st.cache_resource
 def get_graph():
+    """
+    Construct and return the LangGraph graph for the chatbot. The graph includes the following nodes:
+    - chatbot: the main chatbot node that takes the user messages and returns the assistant response
+    - tools: the node containing the query_hotels tool
+    The graph also includes the following edges:
+    - tools -> chatbot: conditional edge that invokes the tools node with the user messages
+    - START -> chatbot: edge that starts the graph execution from the chatbot node
+    The graph is compiled and cached using Streamlit's @st.cache_resource decorator.
+    """
     llm = get_model()
     
     tools = [query_hotels]
