@@ -18,6 +18,7 @@ A conversational AI assistant built with Streamlit and LangGraph that helps user
 - Internet connection for OpenAI API access
 
 ### Dependencies
+#### Also available in `requirements.txt` file
 ```
 streamlit
 pandas
