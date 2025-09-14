@@ -31,6 +31,7 @@ langgraph
 
 ### Data Requirements
 - `hotels.csv` file must be present in the project root directory
+- Dataset used is linked [here](https://www.kaggle.com/datasets/alperenmyung/international-hotel-booking-analytics?select=hotels.csv)
 - The CSV must contain the following columns:
   - `city`: Hotel city location
   - `country`: Hotel country location
